@@ -93,7 +93,7 @@ class RangeSliderWidgetTest extends WebDriverTestBase {
   public function testRangeSliderWidget() {
 
     $this->drupalGet('node/add/' . $this->bundle);
-    $this->assertSession()->waitForText(50);
+    $this->assertSession()->waitForText('50');
 
     $edit = [
       'title[0][value]' => 'Test Range Slider Widget',
